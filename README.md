@@ -1,4 +1,4 @@
-# Eneagon
+# Regens
 
 A #REGEN game to collect Bogota's public places and incentivize citizen coordination to solve public needs..
 
@@ -26,5 +26,7 @@ Future features to add:
 - Livepeer integration  
 - ENS integration for name and profile image  
 
-
-
+# Contracts
+- [Account NFT on Optimism Mainnet](https://optimistic.etherscan.io/address/0xb3911d5F92181fF728C72F0a162e8D6f3BDD5b66#code) 
+- [Public Places NFT](https://optimistic.etherscan.io/address/0xBace7a1b6ee3FB476fc5fEb7E7bf3a60293bC3cb#code) 
+- [DAO ](https://optimistic.etherscan.io/address/0xa7dc76Ae4A98da6352F283874b4C6d3BFb817dC1#code) 
