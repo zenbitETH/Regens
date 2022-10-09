@@ -1,4 +1,4 @@
-export default function scholar() {
+export default function Scholar() {
     return (
         <div>Maestro!</div>
     )
