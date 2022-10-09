@@ -1,5 +1,5 @@
 import React from "react";
-
+//import { WorldIDWidget } from "@worldcoin/id"
 
 /**
  * web3 props can be passed from '../App.jsx' into your local view component for use
@@ -22,6 +22,15 @@ export default function Home({ yourLocalBalance, readContracts }) {
       </a>  
       <div class="py-3 px-5 border bg-gray-100 rounded-3xl cursor-not-allowed">New Place</div>
       <div class="py-3 px-5 border bg-gray-100 rounded-3xl cursor-not-allowed">Add to Quest</div>
+      {/*<WorldIDWidget
+        actionId="wid_staging_PN8fFL7V2N" // obtain this from developer.worldcoin.org
+        signal="my_signal"
+        enableTelemetry
+        onSuccess={(proof) => console.log(proof)}
+        onError={(error) => console.error(error)}
+        debug={true} // to aid with debugging, remove in production
+      />*/}
+    
     </div>
   )
 }
