@@ -10,6 +10,7 @@ import { useExchangeEthPrice } from "eth-hooks/dapps/dex";
 import React, { Fragment, useCallback, useEffect, useState } from "react";
 import { Link, Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
+import "./index.css"
 import {
   Account,
   Contract,
@@ -263,6 +264,7 @@ function App(props) {
     { name: 'ExampleUI', href: '/exampleui', icon: TemplateIcon },
     { name: 'Mainnet DAI', href: '/mainnetdai', icon: CurrencyDollarIcon },
     { name: 'Subgraph', href: '/subgraph', icon: ShareIcon },
+    { name: 'Main', href: '/main', icon: ShareIcon },
   ];
 
   return (

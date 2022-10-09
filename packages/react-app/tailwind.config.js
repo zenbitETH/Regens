@@ -75,7 +75,7 @@ module.exports = {
 			  },
 
 			borderRadius: {
-				'xl': '25px',
+				'xl': '50px',
 			},
 
 			fontFamily: {
