@@ -10,6 +10,7 @@ import { useExchangeEthPrice } from "eth-hooks/dapps/dex";
 import React, { Fragment, useCallback, useEffect, useState } from "react";
 import { Link, Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
+import "./index.css"
 import {
   Account,
   Contract,
@@ -27,7 +28,8 @@ import externalContracts from "./contracts/external_contracts";
 // contracts
 import deployedContracts from "./contracts/hardhat_contracts.json";
 import { Transactor, Web3ModalSetup, classNames } from "./helpers";
-import { Home, ExampleUI, Hints, Subgraph } from "./views";
+import { Home, ExampleUI, Hints, Subgraph, Quests, Youth, Biker, Scholar, Tourist, Governance } from "./views";
+
 import { useStaticJsonRPC } from "./hooks";
 
 import { Dialog, Transition } from '@headlessui/react';
@@ -263,6 +265,7 @@ function App(props) {
     { name: 'ExampleUI', href: '/exampleui', icon: TemplateIcon },
     { name: 'Mainnet DAI', href: '/mainnetdai', icon: CurrencyDollarIcon },
     { name: 'Subgraph', href: '/subgraph', icon: ShareIcon },
+    { name: 'Quest', href: '/Quests', icon: ShareIcon },
   ];
 
   return (
@@ -436,6 +439,30 @@ function App(props) {
                   <Route exact path="/">
                     {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
                     <Home yourLocalBalance={yourLocalBalance} readContracts={readContracts} />
+                  </Route>
+                  <Route exact path="/Quests">
+                    {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+                    <Quests/>
+                  </Route>
+                  <Route exact path="/Youth">
+                    {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+                    <Youth/>
+                  </Route>
+                  <Route exact path="/Biker">
+                    {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+                    <Biker/>
+                  </Route>
+                  <Route exact path="/Scholar">
+                    {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+                    <Scholar/>
+                  </Route>
+                  <Route exact path="/Tourist">
+                    {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+                    <Tourist/>
+                  </Route>
+                  <Route exact path="/Governance">
+                    {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+                    <Governance/>
                   </Route>
                   <Route exact path="/debug">
                     {/*
