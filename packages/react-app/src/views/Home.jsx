@@ -14,8 +14,12 @@ export default function Home({ yourLocalBalance, readContracts }) {
 
   return (
     <div className="grid gap-10 text-center">
-      <div class="py-3 px-5 border border-black rounded-3xl hover:bg-black cursor-pointer hover:text-white">Quest</div>
-      <div class="py-3 px-5 border border-black rounded-3xl hover:bg-black cursor-pointer hover:text-white">Governance</div>
+      <a href="/Quests">
+        <div class="py-3 px-5 border border-black rounded-3xl hover:bg-black cursor-pointer hover:text-white">Quest</div>
+      </a>
+      <a href="/Governance">
+        <div class="py-3 px-5 border border-black rounded-3xl hover:bg-black cursor-pointer hover:text-white">Governance</div>
+      </a>  
       <div class="py-3 px-5 border bg-gray-100 rounded-3xl cursor-not-allowed">New Place</div>
       <div class="py-3 px-5 border bg-gray-100 rounded-3xl cursor-not-allowed">Add to Quest</div>
     </div>

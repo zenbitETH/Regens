@@ -28,7 +28,7 @@ import externalContracts from "./contracts/external_contracts";
 // contracts
 import deployedContracts from "./contracts/hardhat_contracts.json";
 import { Transactor, Web3ModalSetup, classNames } from "./helpers";
-import { Home, ExampleUI, Hints, Subgraph, Quests, Youth, Biker, Scholar, Tourist } from "./views";
+import { Home, ExampleUI, Hints, Subgraph, Quests, Youth, Biker, Scholar, Tourist, Governance } from "./views";
 
 import { useStaticJsonRPC } from "./hooks";
 
@@ -459,6 +459,10 @@ function App(props) {
                   <Route exact path="/Tourist">
                     {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
                     <Tourist/>
+                  </Route>
+                  <Route exact path="/Governance">
+                    {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+                    <Governance/>
                   </Route>
                   <Route exact path="/debug">
                     {/*

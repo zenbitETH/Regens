@@ -7,3 +7,4 @@ export { default as Youth } from "./Youth";
 export { default as Biker } from "./Biker";
 export { default as Scholar } from "./Scholar";
 export { default as Tourist } from "./Tourist"
+export { default as Governance } from "./Governance"
